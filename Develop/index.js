@@ -68,7 +68,6 @@ const QuestionArray = [
 // TODO: Create a function to write README file
 function writeToFile(data) {
   const filename = `README.md`;
-  // const { username, location, url, github } = data;
   const ReadMeFile = `
       
 ${generateMarkdown.generateMarkdown(data.title)}
@@ -76,7 +75,7 @@ ${generateMarkdown.generateMarkdown(data.title)}
 ${generateMarkdown.renderLicenseBadge(data.license)}
 ## Description
 ${data.description}
-## Table of Contents (Optional)
+## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
